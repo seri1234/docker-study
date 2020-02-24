@@ -3,7 +3,7 @@ services:
   db:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD: 0000
+      MYSQL_ROOT_PASSWORD: ${DB_PASS}
       MYSQL_DATABASE: studydb
     ports:
       - "3306:3306"
